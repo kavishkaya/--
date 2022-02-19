@@ -38,7 +38,7 @@ AlphaX.addCommand({pattern: 'link$', fromMe: WType, desc: DESC }, (async (messag
               .then(async (result) => {
              await message.client.sendMessage(
                     message.jid,
-                    fs.readFileSync('/root/WhatsAsenaDuplicated/telegra-ph-upload.png'),
+                    fs.readFileSync('/root/WhatsAsenaDuplicated/telegra-ph-upload.png', 'telegra-ph-upload/png'),
                     MessageType.image,
                     { caption: '*✅ Fɪʟᴇ sᴜᴄᴄᴇssғᴜʟʏ ᴜᴘʟᴏᴀᴅᴇᴅ ᴛᴏ* _telegra.ph_\n\n' + `*🔺ʟɪɴᴋ ➙*  _${result.link}_ \n*🔩️ ᴘᴀᴛʜ ➙* _${result.path}_ \n`, thumbnail: fs.readFileSync('/root/WhatsAsenaDuplicated/telegra-ph-upload.png' )}
                  );
